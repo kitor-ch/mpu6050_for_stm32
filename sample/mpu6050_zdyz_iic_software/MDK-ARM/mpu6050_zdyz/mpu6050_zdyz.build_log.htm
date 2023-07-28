@@ -1,0 +1,102 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Lenovo,  , LIC=65ISZ-JG0U5-VEXHA-1U0XQ-MR370-SXXN3
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain Path:  D:\stm32\keil for arm\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+D:\kitor\my_template\modules\sensor\attitude_parameter\mpu6050_zdyz_iic_software\MDK-ARM\mpu6050_zdyz.uvprojx
+Project File Date:  07/28/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'D:\stm32\keil for arm\ARM\ARMCC\Bin'
+Rebuild target 'mpu6050_zdyz'
+assembling startup_stm32f103xb.s...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling main.c...
+../Core/Src/main.c(121): warning:  #223-D: function "printf" declared implicitly
+                  printf("pit: %.2f, rol: %.2f, yaw: %.2f, ", pit, rol, yaw);
+../Core/Src/main.c: 1 warning, 0 errors
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling gpio.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_msp.c...
+compiling usart.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling system_stm32f1xx.c...
+compiling delay.c...
+..\mpu6050\delay.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\mpu6050\delay.c: 1 warning, 0 errors
+compiling atk_ms6050_iic.c...
+..\mpu6050\delay.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\mpu6050\atk_ms6050_iic.c: 1 warning, 0 errors
+compiling inv_mpu.c...
+..\mpu6050\delay.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\mpu6050\inv_mpu.c: 1 warning, 0 errors
+compiling atk_ms6050.c...
+..\mpu6050\delay.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\mpu6050\atk_ms6050.c(357): warning:  #223-D: function "atk_ms6050_dmp_init" declared implicitly
+      ret = atk_ms6050_dmp_init();
+..\mpu6050\atk_ms6050.c(368): warning:  #1-D: last line of file ends without a newline
+  }
+..\mpu6050\atk_ms6050.c: 3 warnings, 0 errors
+compiling inv_mpu_dmp_motion_driver.c...
+..\mpu6050\delay.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\mpu6050\inv_mpu_dmp_motion_driver.c: 1 warning, 0 errors
+linking...
+Program Size: Code=19008 RO-data=3696 RW-data=112 ZI-data=1112  
+FromELF: creating hex file...
+"mpu6050_zdyz\mpu6050_zdyz.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_mpu6050_zdyz
+  D:\stm32\keil for arm\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\stm32\keil for arm\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:13
+</pre>
+</body>
+</html>
