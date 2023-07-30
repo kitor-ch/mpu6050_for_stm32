@@ -6,6 +6,17 @@ Program Size: Code=35476 RO-data=3600 RW-data=104 ZI-data=4352
 
 mpu设置为开启fifo（先入先出模式）使能中断（当准备好数据，fifo中有可用数据时 int引脚电平变化，具体变化看配置）
 
+默认接线
+mpu6050   mcu
+scl          pb6
+sda     pb7
+int     pa0
+（xda，xcl ad0 悬空）
+用ch340串口工具上传数据到电脑
+a9_rx    接ch340tx
+a10_tx  接ch340rx
+
+
 在cube配置，
 1，串口
 2，iic硬件 设置为400khz（代码里默认是iic1）
